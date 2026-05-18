@@ -9,6 +9,8 @@ CREATE TABLE SKILL (
     skill_name VARCHAR(100) NOT NULL
 );
 
+select * from skill;
+
 CREATE TABLE USER (
     user_id    INT PRIMARY KEY AUTO_INCREMENT,
     username   VARCHAR(50)  NOT NULL,
@@ -30,6 +32,7 @@ CREATE TABLE PROJECT (
     max_members  INT NOT NULL,
     FOREIGN KEY (owner_id) REFERENCES USER(user_id)
 );
+select * from project;
 
 CREATE TABLE USER_SKILL (
     user_id  INT NOT NULL,
@@ -38,6 +41,7 @@ CREATE TABLE USER_SKILL (
     FOREIGN KEY (user_id)  REFERENCES USER(user_id),
     FOREIGN KEY (skill_id) REFERENCES SKILL(skill_id)
 );
+select * from USER_SKILL;
 
 CREATE TABLE PROJECT_SKILL (
     project_id INT NOT NULL,
@@ -46,6 +50,7 @@ CREATE TABLE PROJECT_SKILL (
     FOREIGN KEY (project_id) REFERENCES PROJECT(project_id),
     FOREIGN KEY (skill_id)   REFERENCES SKILL(skill_id)
 );
+select * from PROJECT_SKILL;
 
 CREATE TABLE APPLICATION (
     application_id INT PRIMARY KEY AUTO_INCREMENT,
@@ -57,6 +62,7 @@ CREATE TABLE APPLICATION (
     FOREIGN KEY (user_id)    REFERENCES USER(user_id),
     FOREIGN KEY (project_id) REFERENCES PROJECT(project_id)
 );
+select * from application;
 
 CREATE TABLE MESSAGES (
     message_id  INT PRIMARY KEY AUTO_INCREMENT,
@@ -68,6 +74,7 @@ CREATE TABLE MESSAGES (
     FOREIGN KEY (sender_id)   REFERENCES USER(user_id),
     FOREIGN KEY (receiver_id) REFERENCES USER(user_id)
 );
+select * from messages;
 
 INSERT INTO SKILL (skill_id, skill_name) VALUES
 (1, 'Python'),(2, 'JavaScript'),(3, 'React'),(4, 'Django'),(5, 'Node.js'),
