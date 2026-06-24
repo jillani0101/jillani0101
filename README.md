@@ -57,5 +57,5 @@ Feel free to reach out, collaborate on projects, or explore my work on GitHub.
 <img src="https://github-readme-streak-stats.herokuapp.com/?user=jillani0101&theme=dark" />
 
 <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=jillani0101&layout=compact&theme=dark" />
----
+
 [![Profile Views](https://komarev.com/ghpvc/?username=jillani0101&label=Profile%20Views&color=0e75b6&style=flat)](https://github.com/jillani0101)
