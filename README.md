@@ -10,13 +10,13 @@ Turning ideas into applications with clean code and continuous learning.<br>Expe
 
 
 
-#  Interests
+##  Interests
 
-AI, Machine Learning & Deep Learning
-Robotics and Intelligent Systems
-Problem Solving & Algorithm Design
-Data Structures and Optimization
-Building Real-World Web Applications
+- AI, Machine Learning & Deep Learning
+- Robotics and Intelligent Systems
+- Problem Solving & Algorithm Design
+- Data Structures and Optimization
+- Building Real-World Web Applications
 
 
 ##  Featured Project
